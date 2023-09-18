@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GPA</string>
+
+    <string name="text_1">Bangla</string>
+    <string name="Text_2">English</string>
+    <string name="Text_3">Math</string>
+    <string name="Text_4">Science</string>
+        <string name="Text_5">Social Science</string>
+        <string name="Text_6">Islamic Education</string>
+
+
+</resources>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:background="#00BCD4"
+    android:layout_gravity="center"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="330dp"
+        android:layout_gravity="center"
+        android:layout_height="75dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="GPA Calculation System"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="cursive"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <!--     =========================GridLayout=======================-->
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="8"
+                >
+
+                <!--============================ Intro Row ================-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:gravity="center"
+                    android:text="Subject"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp"
+                    />
+
+                <TextView
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:gravity="center"
+                    android:text="Marks"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_margin="2.5dp"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:gravity="center"
+                    android:text="Point"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:gravity="center"
+                    android:text="Grade"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:textAlignment="center"
+                    />
+
+                <!--    =============================Bangla Subject======================-->
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/coustom_colour"
+                    android:text="Bangla"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/edi_m1"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textColor="#050505"
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_p1"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textV_g1"
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+
+                    />
+                <!--        ======================Englaish Subject=====================-->
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text="@string/Text_2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp" />
+
+                <EditText
+                    android:id="@+id/edi_m2"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:layout_margin="2.5dp"
+                    android:layout_width="67dp"
+                    android:id="@+id/textV_p2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_g2"
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+
+                    />
+                <!--        ==============================Math Subject=======================-->
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text="@string/Text_3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edi_m3"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textV_p3"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_g3"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+                <!--=============================Science=============================-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text="@string/Text_4"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edi_m4"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/textV_p4"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_g4"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <!--        ======================================Social Science================-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text="@string/Text_5"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edi_m5"
+                    android:layout_width="76dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="2.5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/coustom_colour"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textV_p5"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="67dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_g5"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+                <!--        ==============================Islam Edicution=====================-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text="Religion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/edi_m6"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textV_p6"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_g6"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <!--        =====================total==============================-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text="Result"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_m7"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="2.5dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_p7"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textV_g7"
+                    android:layout_margin="2.5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/coustom_colour"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    />
+
+
+            </GridLayout>
+
+
+
+            <!--    ============================Button=======================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:weightSum="20">
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+            <!--    <Button-->
+            <!--        android:id="@+id/btn_cal"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Calculate"-->
+            <!--        android:textSize="30sp"-->
+            <!--        android:layout_gravity="center"-->
+            <!--        android:layout_marginTop="10dp"/>-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:backgroundTint="#8BC34A"
+                app:cornerRadius="20dp"
+                />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    app:cornerRadius="20dp"
+                    android:backgroundTint="#E91E63"
+                    android:layout_marginLeft="7dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+<!--    ++++++++++++++++++++++++top bar card view====================-->
+
+
+</LinearLayout>
